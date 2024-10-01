@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(to right, rgb(17, 133, 187), rgb(94, 188, 177));
+  margin: 0;
+  padding: 0;
+}
+
+.all-events {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  height: auto;
+  width: auto;
+  margin: 50px;
+  padding: 20px;
+  position: relative;
+}
+
+.one-event {
+  cursor: pointer;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(33, 137, 169);
+  border-radius: 5%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.one-event:hover {
+  transform: scale(1.05);
+  background-color: rgb(17, 102, 136);
+}
+
+#image1 {
+  height: 200px;
+  margin-bottom: 10px;
+  position: relative;
+  bottom: 50px;
+}
+
+.DIVLKBIR {
+  margin-top: 150px;
+  padding: 20px;
+}
+
+.titleevent {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: antiquewhite;
+  font-size: 1.5em;
+  padding-top: 50px;
+}
+
+#eventtitledetail {
+  text-align: center;
+  font-size: 5em;
+  color: aliceblue;
+  margin-top: 200px;
+  opacity: 0;
+  transform: scale(0.8); /* Démarre plus petit */
+  animation: fadeInScale 2.5s ease-out forwards; /* Animation sur 2.5 secondes */
+}
+
+#textandimgandgoals {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+
+#imagedetails {
+  height: auto;  
+  width: 100%;   
+  max-width: 800px;
+  margin: 20px; 
+  border: 2px solid aliceblue;
+  object-fit: cover;  
+}
+
+
+
+#Events{
+  position: relative;
+  bottom: 80px;
+}
+.textdetails {
+  color: black;
+  font-size: 1.6em;
+  padding: 20px;
+  margin: 20px;
+  text-align: justify;  /* Aligns the text evenly on both sides */
+  background-color: #efefef;
+  border-radius: 20px;
+  border: 3px solid rgba(70, 13, 241, 0.774) ;
+  max-width: 760px;
+  z-index: 0;
+  
+}
+.textdetails:hover{
+  background-color: rgba(70, 13, 241, 0.774);
+  color: white;
+  border: 3px solid white;
+}
+
+
+
+#divdetails{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+#textdetails {
+  max-width: 600px;  /* Sets a max width so that the text doesn’t stretch too wide */
+  margin-right: 30px;  /* Adds space between text and the image */
+}
+
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8); /* Plus petit au départ */
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1); /* Légère mise en valeur à mi-chemin */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); /* Taille normale à la fin */
+  }
+}

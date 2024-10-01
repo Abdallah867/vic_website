@@ -1,0 +1,63 @@
+#vic_dis, #maarifa_dis{
+    color: black;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 20px;
+    width: 350px;
+    padding: 50px;
+    font-weight: bold;
+    position: relative;
+    top: 20px;
+    z-index: 1;
+   
+}
+#logo_dis_vic, #logo_dis_maarifa{
+    width: 100px;
+    position: relative;
+    top: 90px;
+    z-index: 2;
+}
+#logo_dis_vic{
+    left: 350px;
+}
+#logo_dis_maarifa{
+    left: 495px;
+}
+#vic_dis{
+    left: 170px;
+}
+#maarifa_dis{
+    left: 320px;
+}
+#about{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    float: left;
+}
+h1 {
+    font-size: 4.8em;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 0;
+    position: relative;
+    opacity: 0;
+    transform: scale(0.8); /* Démarre plus petit */
+    animation: fadeInScale 2.5s ease-out forwards; /* Animation sur 2.5 secondes */
+  }
+  
+  /* Animation avec scaling et fondu */
+  @keyframes fadeInScale {
+    0% {
+      opacity: 0;
+      transform: scale(0.8); /* Plus petit au départ */
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1.1); /* Légère mise en valeur à mi-chemin */
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1); /* Taille normale à la fin */
+    }
+  }
